@@ -22,7 +22,7 @@
     &.active
       box-shadow: var(--box-shadow-hover)
       .info-item__icon
-        transform: rotate(90deg)
+        transform: rotate(90deg) translateX(-7px)
     @media (any-hover: hover)
       &:hover
         box-shadow: var(--box-shadow-hover)
@@ -75,6 +75,7 @@
     font-size: 15px
     font-weight: 500
     line-height: 120%
+    will-change: height
     transition: height 0.4s ease, opacity 0.4 ease
     &.active
       height: auto
