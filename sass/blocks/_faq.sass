@@ -1,0 +1,94 @@
+.faq
+
+  &__title
+    text-align: center
+    margin-bottom: 32px
+    @media (max-width: 480px) 
+      margin-bottom: 20px
+
+  &__slider
+    position: relative
+    padding: 15px 
+    margin: -15px 
+    @media (max-width: 480px) 
+      padding: 10px 
+      margin: 0
+
+  &__wrapper  
+    align-items: stretch
+
+  &__slide
+    height: auto
+    
+  &__arrows
+    @media (max-width: 768px) 
+      display: none 
+
+  &__arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 5
+    width: 44px
+    height: 44px
+    border-radius: 100%
+    background-color: var(--main-white)    
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.09))
+    transition: filter 0.3s ease
+    svg
+      width: 7px
+      height: 11px
+      fill: var(--dark-color)
+    @media (any-hover: hover)
+      &:hover
+        filter: drop-shadow(0px 1px 15px rgba(0, 0, 0, 0.2))
+        
+
+    &--prev
+      left: 15px
+      transform: translateY(-50%) rotate(-180deg)
+
+    &--next
+      right: 15px
+
+.faq-slide
+
+  &__link
+    height: 100% 
+    display: flex
+    align-items: flex-start
+    justify-content: space-between 
+    border-radius: 16px
+    background: var(--main-white)
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) 
+    transition: box-shadow 0.3s ease
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: var(--box-shadow-hover) 
+
+  &__info
+    padding: 16px
+
+  &__title
+    font-size: 20px
+    line-height: 120%
+    margin-bottom: 8px
+    @media (max-width: 768px) 
+      font-size: 18px
+
+  &__descr
+    color: var(--text-gray)
+    font-weight: 500
+    line-height: 140%
+    @media (max-width: 480px) 
+      font-size: 13px
+
+  &__img
+    flex: 0 0 104px
+    height: 162px
+    background: url('../img/faq/faq.png') center/cover no-repeat
+
+.swiper-button-disabled  
+  display: none
+  
+

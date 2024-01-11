@@ -1,0 +1,92 @@
+.hero
+
+  &__body
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 40px 60px 54px 60px
+    border-radius: 40px
+    background: url('../img/hero/hero-bg.jpg') center/cover no-repeat
+    @media (max-width: 768px) 
+      border-radius: 20px
+      padding: 20px 
+
+  &__title
+    color: var(--main-white)
+    font-size: 60px
+    font-weight: 900
+    line-height: 120%    
+    margin-bottom: 4px
+    text-align: center
+    @media (max-width: 992px) 
+      font-size: 48px
+    @media (max-width: 480px) 
+      font-size: 36px
+
+  &__descr
+    max-width: 500px
+    color: var(--main-white)
+    text-align: center
+    font-size: 17px
+    font-weight: 500
+    line-height: 140%
+    margin-bottom: 40px
+    @media (max-width: 992px) 
+      font-size: 15px
+      margin-bottom: 30px
+    @media (max-width: 480px) 
+      margin-bottom: 20px
+
+  &__links
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 8px
+    flex-wrap: wrap
+
+  &__item
+    &:nth-child(1)
+      .hero__link 
+        svg
+          width: 14px
+          height: 13px
+
+    &:nth-child(2) 
+      .hero__link 
+        svg
+          width: 13px
+          height: 13px
+
+    &:nth-child(3)
+      .hero__link  
+        svg
+          width: 14px
+          height: 11px
+
+    &:nth-child(4) 
+      .hero__link 
+        svg
+          width: 17px
+          height: 15px
+
+  &__link
+    min-height: 48px
+    width: 160px
+    background-color: var(--main-white)
+    padding: 10px
+    transition: box-shadow 0.3s ease
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: var(--box-shadow-hover)
+
+    @media (max-width: 480px) 
+      min-height: 42px
+    
+    svg
+      fill: var(--dark-color)    
+      margin-right: 8px    
+
+  &__link-text
+    font-size: 15px
+    line-height: 120%
+

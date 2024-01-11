@@ -1,0 +1,102 @@
+.delivery
+
+  &__top
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+    @media (max-width: 480px)
+      margin-bottom: 5px
+
+  &__title
+    font-size: 24px
+    font-weight: 900
+    line-height: 120%
+    margin-right: 6px
+    @media (max-width: 480px)
+      font-size: 20px
+
+  &__share
+    flex: 0 0 42px
+    height: 42px
+    border-radius: 12px
+    transition: background-color 0.3s ease, box-shadow 0.3s ease
+    @media (any-hover: hover)
+      &:hover
+        background-color: var(--main-gray)
+        box-shadow: var(--box-shadow-hover)
+    
+    svg
+      width: 18px
+      height: 20px
+      fill: var(--main-green)
+
+  &__center
+    max-width: 690px
+    margin-bottom: 40px
+    @media (max-width: 480px)
+      margin-bottom: 16px
+
+  &__text
+    font-size: 15px
+    font-weight: 500
+    line-height: 140%
+    @media (max-width: 480px)
+      font-size: 13px
+
+  &__bottom
+
+  &__contact-us
+    display: block
+    font-size: 13px
+    line-height: 120%
+    margin-bottom: 16px
+
+  &__links
+    display: flex
+    align-items: center
+    gap: 8px
+    flex-wrap: wrap
+    @media (max-width: 375px)
+      justify-content: center
+
+  &__chat
+    background-color: var(--main-green)
+    color: var(--main-white)
+    border-radius: 12px
+    padding: 15px 57px
+    svg
+      width: 16px
+      height: 16px
+      fill: var(--main-white)
+      margin-right: 8px
+    @media (max-width: 375px)
+      width: 100%
+
+  &__phone,
+  &__mail
+    flex: 0 0 48px
+    height: 48px
+    border-radius: 12px
+    background-color: var(--main-gray)
+    svg
+      width: 16px
+      fill: var(--main-green)
+
+  &__phone
+    svg
+      height: 16px
+
+  &__mail
+    svg
+      height: 12px
+
+  &__chat,
+  &__phone,
+  &__mail
+    transition: box-shadow 0.3s ease
+    @media (any-hover: hover)
+      &:hover
+        box-shadow: var(--box-shadow-hover)
+    
+
+
